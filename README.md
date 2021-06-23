@@ -28,9 +28,12 @@ Think: filtered summaries, augmented search data mixed together with other sourc
   
 - Another local 'web' server called **Qiqqa Docu Base**, which is part of the Qiqqa/MuPDF toolkit, harbors the Qiqqa Library Database (SQLite) and can be queried to produce more relevant info about and around a given **content hash code**... or a *bunch of those* if you're into doing *bulk operations*.
 
-  **Qiqqa Docu Base** is, for instance, where you may go to inquire about document copies, revisions, reprints, extracts, *bundling*, etc., i.e. any document that has been filed as a (*near-identical*) copy of this one, be it a *revision* (like you see on ArXiv: v1, v2, v3, etc.), a *reprint* (the same, or slightly altered, paper published in a different magazine), a *bundle* (this paper being part of a published book, e.g. Springer Scientific Proceedings series), etc.
+  + **Qiqqa Docu Base** is, for instance, where you may go to inquire about document copies, revisions, reprints, extracts, *bundling*, etc., i.e. any document that has been filed as a (*near-identical*) copy of this one, be it a *revision* (like you see on ArXiv: v1, v2, v3, etc.), a *reprint* (the same, or slightly altered, paper published in a different magazine), a *bundle* (this paper being part of a published book, e.g. Springer Scientific Proceedings series), etc.
   
-  You *could* ask SOLR for this information but it's often faster to obtain direct graph data like that from a database when the relations are not *fuzzy* like you would have in a *full text search* when you are looking for phrases, words or near matches thereof.
+  + You *could* ask SOLR for this information but it's often faster to obtain direct graph data like that from a database when the relations are not *fuzzy* like you would have in a *full text search* when you are looking for phrases, words or near matches thereof.
+  
+  + **Qiqqa Docu Base** is also the place to visit when you want to fetch/"*download*" the original PDF document(s) attached to those `<UniqqueKey>` **content hash codes**: both  subsystems act as simple, regular web servers and can be easily addressed that way, either through using simple script requests or using your generic web browser, thus offering a different UI/UX, next to the **Qiqqa Application** itself.
+  
   
   
 
