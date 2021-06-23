@@ -20,7 +20,7 @@ Think: filtered summaries, augmented search data mixed together with other sourc
 
 ## Some techy/tekky details
 
-- Qiqqa uses **content hash codes** to identify each document in the library collection. ([Qiqqa v80 series uses SHA1B (a.k.a. B00rked SHA1); *future* (at the time of this writing) Qiqqa uses BLAKE3+B58](https://github.com/jimmejardine/qiqqa-open-source/blob/master/docs-src/Progress%20in%20Development/Fingerprinting%20-%20moving%20forward%20and%20away%20from%20b0rked%20SHA1.md))
+- Qiqqa uses **content hash codes** to identify each document in the library collection. ([Qiqqa v80 series uses SHA1B (a.k.a. B0rked SHA1); *future* (at the time of this writing) Qiqqa uses BLAKE3+B58](https://github.com/jimmejardine/qiqqa-open-source/blob/master/docs-src/Progress%20in%20Development/Fingerprinting%20-%20moving%20forward%20and%20away%20from%20b0rked%20SHA1.md))
 
   These hash codes look some like this: `e440b55474b288f9ff5127ee3bf35c67909ec858`, and are also used to (re)name the PDF documents in each library.
   
