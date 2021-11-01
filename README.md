@@ -24,7 +24,7 @@ Think: filtered summaries, augmented search data mixed together with other sourc
 
   These hash codes look some like this: `e440b55474b288f9ff5127ee3bf35c67909ec858`, and are also used to (re)name the PDF documents in each library.
   
-  Meanwhile, all data fed into the SOLR search engine is linked to its docment source by using that very same hash code as it's `<UniqueKey>` in SOLR, thus enabling you to quickly identify document file(s) that are linked to the search results you'll be getting from SOLR. Handy!
+  Meanwhile, all data fed into the SOLR search engine is linked to its document source by using that very same hash code as it's `<UniqueKey>` in SOLR, thus enabling you to quickly identify document file(s) that are linked to the search results you'll be getting from SOLR. Handy!
   
 - Another local 'web' server called **Qiqqa Docu Base**, which is part of the Qiqqa/MuPDF toolkit, harbors the Qiqqa Library Database (SQLite) and can be queried to produce more relevant info about and around a given **content hash code**... or a *bunch of those* if you're into doing *bulk operations*.
 
@@ -32,7 +32,7 @@ Think: filtered summaries, augmented search data mixed together with other sourc
   
   + You *could* ask SOLR for this information but it's often faster to obtain direct graph data like that from a database when the relations are not *fuzzy* like you would have in a *full text search* when you are looking for phrases, words or near matches thereof.
   
-  + **Qiqqa Docu Base** is also the place to visit when you want to fetch/"*download*" the original PDF document(s) attached to those `<UniqqueKey>` **content hash codes**: both  subsystems act as simple, regular web servers and can be easily addressed that way, either through using simple script requests or using your generic web browser, thus offering a different UI/UX, next to the **Qiqqa Application** itself.
+  + **Qiqqa Docu Base** is also the place to visit when you want to fetch/"*download*" the original PDF document(s) attached to those `<UniqueKey>` **content hash codes**: both  subsystems act as simple, regular web servers and can be easily addressed that way, either through using simple script requests or using your generic web browser, thus offering a different UI/UX, next to the **Qiqqa Application** itself.
   
   
   
